@@ -1,26 +1,28 @@
-.top-navbar1{
-background-color: white;
-height:92px;
-/* position: ; */
-top:0;
+.top-navbar1 {
+    background-color: white;
+    height: 92px;
+    /* position: ; */
+    top: 0;
 
 }
-.logo-style{
+
+.logo-style {
     position: relative;
-   top:0;
-   left:5%;
-   height: 90px;
+    top: 0;
+    left: 5%;
+    height: 90px;
 
 }
-.nav1-links{
+
+.nav1-links {
     float: right;
     position: relative;
-    top:20px;
+    top: 20px;
     right: 10%;
-    
 
 }
-.top-navbar2{
+
+.top-navbar2 {
     position: relative;
     top: 0;
     height: 60px;
@@ -28,40 +30,46 @@ top:0;
     padding-top: 20px;
     display: flex;
     flex-direction: row;
-background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
-.bottom-navbar{
-height: 70px;
-margin-top: 30px;
-position: relative;
-width: 100%;
-bottom: 0;
-background-color: #f4f4f4;
-}
-.link-style{
-text-decoration: none;
-font: 14px;
-color: #f14d54;
-padding: 15px;
-display: inline-block;
-font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-/* padd */
+.bottom-navbar {
+    height: 70px;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #f4f4f4;
 }
-.link-style:hover{
-background-color: #f14d54;
-color: white;
+
+.link-style {
+    text-decoration: none;
+    font: 14px;
+    color: #f14d54;
+    padding: 15px;
+    display: inline-block;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* padd */
 }
-.search-res-div{
+
+.link-style:hover {
+    background-color: #f14d54;
+    color: white;
+}
+
+.search-res-div {
     background-color: #FFFFFF;
     /* overflow: hidden; */
-    
-                                    /* backgroundColor:"#FFFBF5"; */
+
+    /* backgroundColor:"#FFFBF5"; */
 }
-.search-res-div:hover{
+
+.search-res-div:hover {
     background-color: #f0f0f0dc;
 }
-.cart-nav-btn{
+
+.cart-nav-btn {
     display: flex-box;
     /* height: 100; */
     width: 100px;
@@ -72,11 +80,14 @@ color: white;
     padding: 10px;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-}.cart-nav-btn:hover{
+}
+
+.cart-nav-btn:hover {
     cursor: pointer;
     background-color: rgb(209, 209, 209);
 }
-.bottom-logo-style{
+
+.bottom-logo-style {
     height: 50px;
     position: relative;
     left: 43%;
