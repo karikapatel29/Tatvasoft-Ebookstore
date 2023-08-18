@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import Login from './Page/Login';
+// import Signup from './Page/Signup';
+import SignIn from './Page/Signup';
+import NotFound from './Page/Notfound';
+import Cart from './Page/Cart';
+import { ToastContainer } from 'react-toastify';
+import BookCard from './Component/BookCard';
+import AllProducts from './Page/AllProducts';
+import { useState } from 'react';
+import LoginBottomNav from './Component/LoginBottomNav';
+import { EditProduct } from './Page/EditProduct';
+import UpdateProfile from './Page/UpdateProfile';
+import BooksPagList from './Page/Books';
+import { AddProduct } from './Page/AddProduct';
 
-function App() {
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer />
+      <Routes>
+        <Route path='/' element=<Login /> />
+        <Route path='signup' element=<SignIn /> />
+        <Route path='cart' element=<Cart /> />
+        <Route path='/productlist' element=<AllProducts /> />
+        <Route path='/editbook' element=<EditProduct /> />
+        <Route path='/bookpaglist' element=<BooksPagList /> />
+        <Route path='/addproduct' element=<AddProduct /> />
+        <Route path='/updateprofile' element=<UpdateProfile /> />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+
+      <LoginBottomNav />
+    </>
   );
 }
-
 export default App;
+
